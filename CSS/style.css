@@ -1,0 +1,12 @@
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #98A8F8;
+}
+
+#navElement {
+  text-decoration: none;
+}
