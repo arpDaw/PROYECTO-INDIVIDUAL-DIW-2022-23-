@@ -1,101 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <navbar class="barra_nav">
+      <navbar class="barra_nav">
+        <div class="marca">
+          <img class="" id="logo" src="images/discworld.png" alt="" />
+        </div>
 
-            <div class="marca">
-                <img class="" id="logo" src="images/discworld.png" alt="">
-            </div>
-
-            <div class="menu">
-                <ul class="menu_Items">
-                    <li>
-                        <a href="" class="nav-item" id="navElement">Elemento3</a>
-                    </li>
-                    <li>
-                        <span id="separador"> ¦</span>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item" id="navElement">Sagas</a>
-                    </li>
-                    <li>
-                        <span id="separador"> ¦</span>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item" id="navElement">Libros</a>
-                    </li>
-                </ul>
-            </div>
-            
-            
-        </navbar>
+        <div class="menu">
+          <ul class="menu_Items">
+            <li>
+              <a href="" class="nav-item" id="navElement">Elemento3</a>
+            </li>
+            <li>
+              <span id="separador"> ¦</span>
+            </li>
+            <li>
+              <a href="" class="nav-item" id="navElement">Sagas</a>
+            </li>
+            <li>
+              <span id="separador"> ¦</span>
+            </li>
+            <li>
+              <a href="" class="nav-item" id="navElement">Libros</a>
+            </li>
+          </ul>
+        </div>
+      </navbar>
     </header>
-    
+
     <main>
-        <section class="welcome">
-            <div class="texto">
-                <h1 class="titulo">Mundodisco</h1>
-                <span class="resumen">Mundodisco es una saga de novelas escrita por Terry Pratchett. Los hechos transcurren en el Mundodisco.
-                     El escenario es medieval fantástico, aunque algunas partes del mundo están ambientadas en la era victoriana a lo largo de la serie. 
-                     Los libros frecuentemente hacen parodias, o al menos toman ideas prestadas, de autores como J. R. R. Tolkien, Robert E. Howard, 
-                     H.P. Lovecraft o William Shakespeare</span>
+      <section class="welcome">
+        <div class="texto">
+          <h1 class="titulo">Mundodisco</h1>
+          <span class="resumen"
+            >Mundodisco es una saga de novelas escrita por Terry Pratchett. Los
+            hechos transcurren en el Mundodisco. El escenario es medieval
+            fantástico, aunque algunas partes del mundo están ambientadas en la
+            era victoriana a lo largo de la serie. Los libros frecuentemente
+            hacen parodias, o al menos toman ideas prestadas, de autores como J.
+            R. R. Tolkien, Robert E. Howard, H.P. Lovecraft o William
+            Shakespeare</span
+          >
+        </div>
+      </section>
+
+      <section class="sagas">
+        <section class="gallery">
+          <section class="carrusel carrusel--first">
+            <div class="carrusel__items">
+              <h2 class="title">Sagas</h2>
+              <div class="arrows">
+                <div class="arrow arrow--left dotRight" id="dotRight">
+                  <img src="../assets/icons/caret-left.svg" alt="caret left" />
+                </div>
+                <div class="arrow arrow--right dotLeft" id="dotLeft">
+                  <img
+                    src="../assets/icons/caret-right.svg"
+                    alt="caret right"
+                  />
+                </div>
+              </div>
+              <div class="carrusel__big">
+                <img src="images/magos.jpg" class="img" />
+                <img src="images/mort.jpg" class="img" />
+                <img src="images/watch.jpg" class="img img--normal" />
+                <img src="images/witches.jpg" class="img img--big" />
+                <img src="images/science.png" class="img img--normal" />
+                <img src="images/tiffany.png" class="img" />
+                <img src="images/Small-Gods.jpg" class="img" />
+              </div>
             </div>
+            <div class="line"></div>
+          </section>
         </section>
+      </section>
 
-        <section class="sagas">
-            <section class="gallery">
-      
-      
-                <section class="carrusel carrusel--first">                
-                  <div class="carrusel__items">
-                    <h2 class="title">Sagas</h2>
-                    <div class="arrows">
-                      <div class="arrow arrow--left dotRight" id="dotRight"><img src="../assets/icons/caret-left.svg" alt="caret left"></div>
-                      <div class="arrow arrow--right dotLeft" id="dotLeft"><img src="../assets/icons/caret-right.svg" alt="caret right"></div>
-                    </div>          
-                    <div class="carrusel__big">
-                        <img src="images/magos.jpg" class="img">
-                        <img src="images/mort.jpg" class="img">
-                        <img src="images/watch.jpg" class="img img--normal">
-                        <img src="images/witches.jpg" class="img img--big">
-                        <img src="images/science.png" class="img img--normal">
-                        <img src="images/tiffany.png" class="img">
-                        <img src="images/Small-Gods.jpg" class="img">
-                    </div>
-                  </div>
-                  <div class="line"></div>      
-                </section>
-                
-          
-                
-          
+      <section class="libros">
+        <img class="img_libro" src="/images/00.jpg" alt="" />
+        <img class="img_libro" src="/images/01.jpg" alt="" />
+        <img class="img_libro" src="/images/02.jpg" alt="" />
+        <img class="img_libro" src="/images/03.jpg" alt="" />
+        <img class="img_libro" src="/images/04.jpg" alt="" />
+        <img class="img_libro" src="/images/05.jpg" alt="" />
+        <img class="img_libro" src="/images/06.jpg" alt="" />
+        <img class="img_libro" src="/images/07.jpg" alt="" />
+      </section>
 
-                
-              </section>
-        </section>
+      <footer>
+        <div class="lineaSeparadora"></div>
+        <div class="pie">
+          <div class="bloqueLogo">
+            <img class="unseenLogo" src="/images/unseenlogo.png" alt="" />
+          </div>
 
-        <section class="libros">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-            <img class="img_libro" src="/images/tiffany.png" alt="">
-        </section>
+          <ul class="politicas">
+            <li class="elementoLista">
+              <a href="" class="enlacePoliticas">Discworld Privacy Policy</a>
+            </li>
+            <li class="elementoLista">
+              <span class="separaEnlaces"> | </span>
+            </li>
+            <li class="elementoLista">
+              <a href="" class="enlacePoliticas"> Terms of Service</a>
+            </li>
+            <li class="elementoLista">
+              <span class="separaEnlaces"> | </span>
+            </li>
+            <li class="elementoLista">
+              <a href="" class="enlacePoliticas"> Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
 
     <script src="funcionalidad.js"></script>
-</body>
+  </body>
 </html>
