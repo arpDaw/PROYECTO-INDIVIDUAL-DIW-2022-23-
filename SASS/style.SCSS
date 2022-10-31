@@ -183,7 +183,7 @@ html{
   }
   
   .title {
-   
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -420,9 +420,10 @@ html{
     min-height: 1vh;
     width: 100%;
   }
+
   .pie{
     background-color: #153462;
-    min-height: 15vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

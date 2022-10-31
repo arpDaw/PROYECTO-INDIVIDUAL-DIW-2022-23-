@@ -1,8 +1,8 @@
 //DECLARACIÓN DE CONSTANTES
 
 //Identificamos los botones
-const dLeft = document.querySelectorAll(".dotLeft");
-const dRight = document.querySelectorAll(".dotRight");
+const dLeft = document.getElementById("dotLeft");
+const dRight = document.getElementById("dotRight");
 
 //****************EVENTOS****************
 
@@ -99,15 +99,15 @@ const actualizarEstilos = (direcction, grupImages) => {
 //--Eventos--
 
 //Evento a los botones izquierdos
-dLeft.forEach((btn) => btn.addEventListener("click", moveLeft, onceTime));
+dLeft.addEventListener("click", moveLeft, onceTime);
 
 //Evento a los botones derechos
-dRight.forEach((btn) => btn.addEventListener("click", moveRight, onceTime));
+dRight.addEventListener("click", moveRight, onceTime);
 
 //--Eventos--
 
 //Evento a los botones izquierdos
-dLeft.forEach((btn) => btn.addEventListener("click", moveLeft, onceTime));
+dLeft.addEventListener("click", moveLeft, onceTime);
 
 //Evento a los botones derechos
-dRight.forEach((btn) => btn.addEventListener("click", moveRight, onceTime));
+dRight.addEventListener("click", moveRight, onceTime);
