@@ -489,3 +489,9 @@ html {
 .elementoLista {
   margin-left: 10px;
 }
+
+.anchor {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
