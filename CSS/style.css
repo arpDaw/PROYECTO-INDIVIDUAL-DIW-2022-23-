@@ -116,7 +116,7 @@ html {
 
 .sagas {
   background-color: #BAD1C2;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -172,6 +172,7 @@ html {
 }
 
 .title {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -367,21 +368,71 @@ html {
 }
 
 .libros {
-  text-align: center;
-  align-items: center;
+  position: relative;
   background-color: #dde1de;
-  min-height: 100vh;
+  min-height: 80vh;
+}
+
+.tarjetas {
+  position: absolute;
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 5px;
+  justify-items: center;
+  margin-top: 9.5px;
+}
+
+.contenedor {
+  position: relative;
+  width: 300px;
+  height: auto;
+}
+
+.carta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.portada {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.contraportada {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.textoTrasero {
+  color: white;
+  position: absolute;
+  z-index: 2;
+  font-size: 15px;
+}
+
+.imgTrasera {
+  position: absolute;
+  filter: brightness(35%);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.carta:hover {
+  transform: rotateY(180deg);
 }
 
 .img_libro {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  justify-self: center;
-  align-self: center;
   width: 300px;
   height: auto;
 }
@@ -396,7 +447,7 @@ html {
 
 .pie {
   background-color: #153462;
-  min-height: 15vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -422,12 +473,12 @@ html {
 .enlacePoliticas {
   text-decoration: none;
   color: white;
-  font-size: xx-small;
+  font-size: 12px;
 }
 
 .enlacePoliticas:hover {
   color: white;
-  font-size: x-small;
+  font-size: 14px;
   font-weight: bolder;
 }
 
