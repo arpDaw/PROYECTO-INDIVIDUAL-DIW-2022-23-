@@ -492,21 +492,30 @@ html{
   .bloqueLogo{
     flex:3;
   }
+
+  .bloqueListas{
+    flex:1;
+  }
   .unseenLogo{
     max-width: 100px;
     max-height: auto;
     margin-top: 6.5px;
   }
 
-  .politicas{
+  .listaFooter{
     list-style:none;
     display: flex;
     align-self: flex-start;
-    flex: 1;
+    
     
   }
 
   .enlacePoliticas{
+    text-decoration: none;
+    color: white; 
+    font-size:12px;
+  }
+  .autorDatos{
     text-decoration: none;
     color: white; 
     font-size:12px;
